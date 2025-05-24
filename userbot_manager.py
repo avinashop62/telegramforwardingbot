@@ -9,7 +9,7 @@ chat_config = {}
 forwarding_status = {}
 
 async def start_login(user_id, phone, bot):
-    client = TelegramClient(f"{sessions_dir}/{user_id}", api_id=20231234, api_hash="your_api_hash")
+    client = TelegramClient(f"{sessions_dir}/{user_id}", api_id=22630232, api_hash="907cba0d91d193a54375b2abe0e018a6")
     await client.connect()
     sent = await client.send_code_request(phone)
     user_clients[user_id] = {"client": client, "phone": phone, "code_hash": sent.phone_code_hash}
