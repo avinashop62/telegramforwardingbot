@@ -48,3 +48,9 @@ async def start_forwarding(user_id, client):
 
 async def toggle_forwarding(user_id, status):
     forwarding_status[user_id] = status
+
+if __name__ == "__main__":
+    import asyncio
+    print("Userbot manager is active.")
+    loop = asyncio.get_event_loop()
+    loop.run_forever()  # Keeps the process alive for event handlers
